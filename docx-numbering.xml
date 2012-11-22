@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:numbering xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:sl="http://schemas.openxmlformats.org/schemaLibrary/2006/main" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture" xmlns:c="http://schemas.openxmlformats.org/drawingml/2006/chart" xmlns:lc="http://schemas.openxmlformats.org/drawingml/2006/lockedCanvas" xmlns:dgm="http://schemas.openxmlformats.org/drawingml/2006/diagram">
+    <w:abstractNum w:abstractNumId="1">
+        <w:lvl w:ilvl="0">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="bullet"/>
+            <w:lvlText w:val="●"/>
+            <w:pPr>
+                <w:ind w:firstLine="360" w:left="720"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="1">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="bullet"/>
+            <w:lvlText w:val="○"/>
+            <w:pPr>
+                <w:ind w:firstLine="1080" w:left="1440"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="2">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="bullet"/>
+            <w:lvlText w:val="■"/>
+            <w:pPr>
+                <w:ind w:firstLine="1800" w:left="2160"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="3">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="bullet"/>
+            <w:lvlText w:val="●"/>
+            <w:pPr>
+                <w:ind w:firstLine="2520" w:left="2880"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="4">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="bullet"/>
+            <w:lvlText w:val="○"/>
+            <w:pPr>
+                <w:ind w:firstLine="3240" w:left="3600"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="5">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="bullet"/>
+            <w:lvlText w:val="■"/>
+            <w:pPr>
+                <w:ind w:firstLine="3960" w:left="4320"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="6">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="bullet"/>
+            <w:lvlText w:val="●"/>
+            <w:pPr>
+                <w:ind w:firstLine="4680" w:left="5040"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="7">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="bullet"/>
+            <w:lvlText w:val="○"/>
+            <w:pPr>
+                <w:ind w:firstLine="5400" w:left="5760"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="8">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="bullet"/>
+            <w:lvlText w:val="■"/>
+            <w:pPr>
+                <w:ind w:firstLine="6120" w:left="6480"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+    </w:abstractNum>
+    <w:abstractNum w:abstractNumId="2">
+        <w:lvl w:ilvl="0">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="decimal"/>
+            <w:lvlText w:val="%1"/>
+            <w:pPr>
+                <w:ind w:firstLine="360" w:left="720"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="1">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="lowerLetter"/>
+            <w:lvlText w:val="%2"/>
+            <w:pPr>
+                <w:ind w:firstLine="1080" w:left="1440"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="2">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="lowerRoman"/>
+            <w:lvlText w:val="%3"/>
+            <w:pPr>
+                <w:ind w:firstLine="1800" w:left="2160"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="3">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="decimal"/>
+            <w:lvlText w:val="%4"/>
+            <w:pPr>
+                <w:ind w:firstLine="2520" w:left="2880"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="4">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="lowerLetter"/>
+            <w:lvlText w:val="%5"/>
+            <w:pPr>
+                <w:ind w:firstLine="3240" w:left="3600"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="5">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="lowerRoman"/>
+            <w:lvlText w:val="%6"/>
+            <w:pPr>
+                <w:ind w:firstLine="3960" w:left="4320"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="6">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="decimal"/>
+            <w:lvlText w:val="%7"/>
+            <w:pPr>
+                <w:ind w:firstLine="4680" w:left="5040"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="7">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="lowerLetter"/>
+            <w:lvlText w:val="%8"/>
+            <w:pPr>
+                <w:ind w:firstLine="5400" w:left="5760"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+        <w:lvl w:ilvl="8">
+            <w:start w:val="1"/>
+            <w:numFmt w:val="lowerRoman"/>
+            <w:lvlText w:val="%9"/>
+            <w:pPr>
+                <w:ind w:firstLine="6120" w:left="6480"/>
+            </w:pPr>
+            <w:rPr>
+                <w:rFonts w:eastAsia="Arial" w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>
+                <w:b w:val="0"/>
+                <w:i w:val="0"/>
+                <w:smallCaps w:val="0"/>
+                <w:strike w:val="0"/>
+                <w:color w:val="000000"/>
+                <w:sz w:val="22"/>
+                <w:highlight w:val="none"/>
+                <w:u w:val="none"/>
+                <w:vertAlign w:val="baseline"/>
+            </w:rPr>
+        </w:lvl>
+    </w:abstractNum>
+    <w:num w:numId="1">
+        <w:abstractNumId w:val="1"/>
+    </w:num>
+    <w:num w:numId="2">
+        <w:abstractNumId w:val="2"/>
+    </w:num>
+</w:numbering>

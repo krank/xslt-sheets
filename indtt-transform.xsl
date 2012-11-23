@@ -36,6 +36,30 @@
     <xsl:apply-templates/>
 </xsl:template>
 
+<xsl:template match="w:tbl">
+    <xsl:text>&lt;ParaStyle:NormalParagraphStyle&gt;</xsl:text>
+    <xsl:text>&lt;TableStart:&gt;</xsl:text>
+    
+    <!-- Go through all rows -->
+    <xsl:for-each select="w:tr">
+        <xsl:text>&lt;RowStart:&gt;</xsl:text>
+        
+        <!-- Go through all the cells of each row -->
+        <xsl:for-each select="w:tc">
+            <xsl:text>&lt;CellStart:&gt;</xsl:text>
+            
+            <xsl:apply-templates select="w:p"/>
+            
+            <xsl:text>&lt;CellEnd:&gt;</xsl:text>
+        </xsl:for-each>
+        
+        <xsl:text>&lt;RowEnd:&gt;</xsl:text>
+    </xsl:for-each>
+    
+    
+    <xsl:text>&lt;TableEnd:&gt;&#13;</xsl:text>
+</xsl:template>
+
 <!-- Match all paragraphs -->
 <xsl:template match="w:p">
     <!-- Get the paragraph style -->

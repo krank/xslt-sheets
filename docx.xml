@@ -23,7 +23,19 @@
                     <w:highlight w:val="none"/>
                     <w:rtl w:val="0"/>
                 </w:rPr>
-                <w:t xml:space="preserve">Rubrik 2</w:t>
+                <w:t xml:space="preserve">Rubrik 6</w:t>
+            </w:r>
+        </w:p>
+        <w:p w:rsidDel="00000000" w:rsidRDefault="00000000" w:rsidR="00000000" w:rsidRPr="00000000" w:rsidP="00000000">
+            <w:pPr>
+                <w:pStyle w:val="Heading6"/>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Rubrik 6 igen</w:t>
             </w:r>
         </w:p>
         <w:p w:rsidDel="00000000" w:rsidRDefault="00000000" w:rsidR="00000000" w:rsidRPr="00000000" w:rsidP="00000000">
@@ -125,6 +137,150 @@
                     <w:rtl w:val="0"/>
                 </w:rPr>
                 <w:t xml:space="preserve">text</w:t>
+            </w:r>
+        </w:p>
+        <w:p w:rsidDel="00000000" w:rsidRDefault="00000000" w:rsidR="00000000" w:rsidRPr="00000000" w:rsidP="00000000">
+            <w:pPr/>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Detta är </w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:strike w:val="1"/>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">genomstruken </w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">text</w:t>
+            </w:r>
+        </w:p>
+        <w:p w:rsidDel="00000000" w:rsidRDefault="00000000" w:rsidR="00000000" w:rsidRPr="00000000" w:rsidP="00000000">
+            <w:pPr/>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Em dash: </w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:sz w:val="20"/>
+                    <w:highlight w:val="white"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">—</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+            </w:r>
+        </w:p>
+        <w:p w:rsidDel="00000000" w:rsidRDefault="00000000" w:rsidR="00000000" w:rsidRPr="00000000" w:rsidP="00000000">
+            <w:pPr/>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">En dash: </w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:sz w:val="20"/>
+                    <w:highlight w:val="white"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">–</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+            </w:r>
+        </w:p>
+        <w:p w:rsidDel="00000000" w:rsidRDefault="00000000" w:rsidR="00000000" w:rsidRPr="00000000" w:rsidP="00000000">
+            <w:pPr/>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Ellipsis: </w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:sz w:val="20"/>
+                    <w:highlight w:val="white"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">…</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+            </w:r>
+        </w:p>
+        <w:p w:rsidDel="00000000" w:rsidRDefault="00000000" w:rsidR="00000000" w:rsidRPr="00000000" w:rsidP="00000000">
+            <w:pPr/>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Detta är upp</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:vertAlign w:val="superscript"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">höjd</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve"> text</w:t>
+            </w:r>
+        </w:p>
+        <w:p w:rsidDel="00000000" w:rsidRDefault="00000000" w:rsidR="00000000" w:rsidRPr="00000000" w:rsidP="00000000">
+            <w:pPr/>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Detta är ned</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:vertAlign w:val="subscript"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">sänkt</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve"> text</w:t>
             </w:r>
         </w:p>
         <w:p w:rsidDel="00000000" w:rsidRDefault="00000000" w:rsidR="00000000" w:rsidRPr="00000000" w:rsidP="00000000">
@@ -342,6 +498,18 @@
                 </w:rPr>
                 <w:t xml:space="preserve">Indragen text</w:t>
             </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:vertAlign w:val="superscript"/>
+                </w:rPr>
+                <w:footnoteReference w:id="0" w:customMarkFollows="0"/>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+            </w:r>
         </w:p>
         <w:p w:rsidDel="00000000" w:rsidRDefault="00000000" w:rsidR="00000000" w:rsidRPr="00000000" w:rsidP="00000000">
             <w:pPr>
@@ -506,19 +674,26 @@
                 <w:jc w:val="left"/>
             </w:pPr>
             <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">förebild</w:t>
+            </w:r>
+            <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
                 <w:drawing>
                     <wp:inline>
                         <wp:extent cx="2219325" cy="1400175"/>
-                        <wp:docPr name="image00.png" id="1"/>
+                        <wp:docPr name="image01.png" id="1"/>
                         <a:graphic>
                             <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
                                 <pic:pic>
                                     <pic:nvPicPr>
-                                        <pic:cNvPr name="image00.png" id="0"/>
+                                        <pic:cNvPr name="image01.png" id="0"/>
                                         <pic:cNvPicPr preferRelativeResize="0"/>
                                     </pic:nvPicPr>
                                     <pic:blipFill>
-                                        <a:blip r:embed="rId5"/>
+                                        <a:blip r:embed="rId6"/>
                                         <a:stretch>
                                             <a:fillRect/>
                                         </a:stretch>
@@ -537,8 +712,10 @@
             </w:r>
             <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
                 <w:rPr>
+                    <w:highlight w:val="none"/>
                     <w:rtl w:val="0"/>
                 </w:rPr>
+                <w:t xml:space="preserve">efterbild</w:t>
             </w:r>
             <w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000">
                 <w:drawing>
@@ -552,16 +729,16 @@
                         </wp:positionV>
                         <wp:extent cy="1400175" cx="2219325"/>
                         <wp:wrapSquare wrapText="bothSides"/>
-                        <wp:docPr name="image01.png" id="2"/>
+                        <wp:docPr name="image00.png" id="2"/>
                         <a:graphic>
                             <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
                                 <pic:pic>
                                     <pic:nvPicPr>
-                                        <pic:cNvPr name="image01.png" id="0"/>
+                                        <pic:cNvPr name="image00.png" id="0"/>
                                         <pic:cNvPicPr preferRelativeResize="0"/>
                                     </pic:nvPicPr>
                                     <pic:blipFill>
-                                        <a:blip r:embed="rId6"/>
+                                        <a:blip r:embed="rId7"/>
                                         <a:stretch>
                                             <a:fillRect/>
                                         </a:stretch>
@@ -621,6 +798,18 @@
                                 <w:rtl w:val="0"/>
                             </w:rPr>
                             <w:t xml:space="preserve">Hey</w:t>
+                        </w:r>
+                        <w:r w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
+                            <w:rPr>
+                                <w:highlight w:val="none"/>
+                                <w:vertAlign w:val="superscript"/>
+                            </w:rPr>
+                            <w:footnoteReference w:id="1" w:customMarkFollows="0"/>
+                        </w:r>
+                        <w:r w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
+                            <w:rPr>
+                                <w:rtl w:val="0"/>
+                            </w:rPr>
                         </w:r>
                     </w:p>
                 </w:tc>
@@ -710,13 +899,60 @@
             <w:pPr>
                 <w:jc w:val="left"/>
             </w:pPr>
+            <w:fldSimple w:fldLock="0" w:instr="NUMPAGES" w:dirty="0">
+                <w:r w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
+                    <w:rPr>
+                        <w:highlight w:val="none"/>
+                    </w:rPr>
+                </w:r>
+            </w:fldSimple>
             <w:r w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
                 <w:rPr>
                     <w:rtl w:val="0"/>
                 </w:rPr>
             </w:r>
         </w:p>
+        <w:p w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
+            <w:pPr>
+                <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">Page break:</w:t>
+            </w:r>
+        </w:p>
+        <w:p w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
+            <w:r w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
+                <w:br w:type="page"/>
+            </w:r>
+        </w:p>
+        <w:p w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
+            <w:pPr>
+                <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
+                <w:rPr>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+            </w:r>
+        </w:p>
+        <w:p w:rsidP="00000000" w:rsidRDefault="00000000" w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
+            <w:pPr>
+                <w:jc w:val="left"/>
+            </w:pPr>
+            <w:r w:rsidDel="00000000" w:rsidRPr="00000000" w:rsidR="00000000">
+                <w:rPr>
+                    <w:highlight w:val="none"/>
+                    <w:rtl w:val="0"/>
+                </w:rPr>
+                <w:t xml:space="preserve">After page break</w:t>
+            </w:r>
+        </w:p>
         <w:sectPr>
+            <w:footerReference w:type="default" r:id="rId8"/>
             <w:pgSz w:h="16838" w:w="11906"/>
             <w:pgMar w:top="1440" w:right="1440" w:left="1440" w:bottom="1440"/>
         </w:sectPr>

@@ -5,14 +5,16 @@
 <xsl:output method="text"/>
 <xsl:strip-space elements="*"/>
 
-<!-- Numbering file to use -->
+<!-- Files to use -->
 <xsl:variable name="numberingfile" select="'docx-numbering.xml'"/>
-<xsl:variable name="scale" select="0.03"/>
+<xsl:variable name="footnotefile" select="'docx-footnotes.xml'"/>
 
 <!-- Options -->
 <xsl:variable name="use_justifications" select="1"/>
+<xsl:variable name="scale" select="0.03"/>
 
-
+<!-- Keys-->
+<xsl:key name="styles" match="w:p/w:pPr/w:pStyle" use="@w:val"/>
 
 <!-- Basic document structure -->
 <xsl:template match="/">
@@ -20,19 +22,12 @@
     
     <!-- Set up paragraph styles -->
     <xsl:text>&lt;DefineParaStyle:NormalParagraphStyle&gt;&#13;</xsl:text>
-    <xsl:text>&lt;DefineParaStyle:Title&gt;&#13;</xsl:text>
-    <xsl:text>&lt;DefineParaStyle:Subtitle&gt;&#13;</xsl:text>
-    <xsl:text>&lt;DefineParaStyle:Heading1&gt;&#13;</xsl:text>
-    <xsl:text>&lt;DefineParaStyle:Heading2&gt;&#13;</xsl:text>
-    <xsl:text>&lt;DefineParaStyle:Heading3&gt;&#13;</xsl:text>
-    <xsl:text>&lt;DefineParaStyle:Heading4&gt;&#13;</xsl:text>
-    <xsl:text>&lt;DefineParaStyle:Heading5&gt;&#13;</xsl:text>
-    <xsl:text>&lt;DefineParaStyle:Heading6&gt;&#13;</xsl:text>
 
-    <!-- Set up character styles -->
-    <xsl:text>&lt;DefineCharStyle:Italic=&lt;cTypeface:Italic&gt;&gt;&#13;</xsl:text>
-    <xsl:text>&lt;DefineCharStyle:Bold=&lt;cTypeface:Bold&gt;&gt;&#13;</xsl:text>
-    <xsl:text>&lt;DefineCharStyle:ItalicBold=&lt;cTypeface:Bold Italic&gt;&gt;&#13;</xsl:text>
+    <xsl:for-each select="//w:pStyle[generate-id() = generate-id(key('styles',@w:val)[1])]">
+        <xsl:text>&lt;DefineParaStyle:</xsl:text>
+        <xsl:value-of select="@w:val"/>
+        <xsl:text>&gt;&#13;</xsl:text>
+    </xsl:for-each>
     
     <xsl:apply-templates/>
 </xsl:template>
@@ -147,7 +142,7 @@
 <!-- Template for images -->
 
 <xsl:template match="w:drawing">
-    <xsl:text>--IMAGE:</xsl:text>
+    <xsl:text>&#91;IMAGE:</xsl:text>
     
     <xsl:if test="wp:inline"/>
     <xsl:choose>
@@ -161,11 +156,7 @@
         </xsl:when>
     </xsl:choose>
     
-    <xsl:text>--</xsl:text>
-</xsl:template>
-
-<xsl:template match="wp:posOffset">
-    <xsl:text>hey</xsl:text>
+    <xsl:text>&#93;</xsl:text>
 </xsl:template>
 
 <!-- Template for sub-r's -->
@@ -195,7 +186,7 @@
     </xsl:if>
     
     <!-- Begin sub/superscript -->
-    <xsl:if test="w:rPr/w:vertAlign">
+    <xsl:if test="w:rPr/w:vertAlign and not(w:footnoteReference)">
         <xsl:text>&lt;cPosition:</xsl:text>
         <xsl:choose>
             <xsl:when test="w:rPr/w:vertAlign/@w:val = 'superscript'">
@@ -220,7 +211,7 @@
     </xsl:choose>
 
     <!-- End sub/superscript -->
-    <xsl:if test="w:rPr/w:vertAlign">
+    <xsl:if test="w:rPr/w:vertAlign and not(w:footnoteReference)">
         <xsl:text>&lt;cPosition:&gt;</xsl:text>
     </xsl:if>
     
@@ -239,6 +230,29 @@
         <xsl:text>&lt;cTypeface:&gt;</xsl:text>
     </xsl:if>
     
+    <!-- Footnotes -->
+    <xsl:if test="w:footnoteReference">
+        <xsl:call-template name="footnote">
+            <xsl:with-param name="id" select="w:footnoteReference/@w:id"/>
+        </xsl:call-template>
+    </xsl:if>
+    
+    <!-- Page break -->
+    <xsl:if test="w:br">
+        <xsl:text>&lt;cNextXChars:Column&gt;</xsl:text>
+    </xsl:if>
+            
+    
+</xsl:template>
+
+
+<!-- Footnotes -->
+<xsl:template name="footnote">
+    <xsl:param name="id" select="0"/>
+    
+    <xsl:text>&lt;FootnoteStart:&gt;</xsl:text>
+    <xsl:value-of select="document($footnotefile)/w:footnotes/w:footnote[@w:id = $id]"/>
+    <xsl:text>&lt;FootnoteEnd:&gt;</xsl:text>
 </xsl:template>
 
 
@@ -284,17 +298,5 @@
     </xsl:choose>
     
 </xsl:template>
-
-<!--
-Needs a' fixin:
- - Images
- - Tables w/ recursive paragraph management
- - Special entities(?)
-Low priority:
- - Colored text
- - Super/sub
- - Footnotes
-
--->
 
 </xsl:stylesheet>

@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+ xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
 <xsl:output method="text"/>
 <xsl:strip-space elements="*"/>
@@ -36,6 +37,7 @@
     <xsl:apply-templates/>
 </xsl:template>
 
+<!-- Match all tables -->
 <xsl:template match="w:tbl">
     <xsl:text>&lt;ParaStyle:NormalParagraphStyle&gt;</xsl:text>
     <xsl:text>&lt;TableStart:&gt;</xsl:text>
@@ -142,43 +144,99 @@
     
 </xsl:template>
 
+<!-- Template for images -->
+
+<xsl:template match="w:drawing">
+    <xsl:text>--IMAGE:</xsl:text>
+    
+    <xsl:if test="wp:inline"/>
+    <xsl:choose>
+        <xsl:when test="wp:inline">
+            <xsl:text>INLINE:</xsl:text>
+            <xsl:value-of select="wp:inline/wp:docPr/@name"/>
+        </xsl:when>
+        <xsl:when test="wp:anchor">
+            <xsl:text>ANCHORED:</xsl:text>
+            <xsl:value-of select="wp:anchor/wp:docPr/@name"/>
+        </xsl:when>
+    </xsl:choose>
+    
+    <xsl:text>--</xsl:text>
+</xsl:template>
+
+<xsl:template match="wp:posOffset">
+    <xsl:text>hey</xsl:text>
+</xsl:template>
+
 <!-- Template for sub-r's -->
 <xsl:template match="w:r">
+
+    <!-- Begin bold/italic -->
+    <xsl:choose>
+        <xsl:when test="w:rPr/w:b and not(w:rPr/w:i)">
+            <xsl:text>&lt;cTypeface:Bold&gt;</xsl:text>
+        </xsl:when>
+        <xsl:when test="not(w:rPr/w:b) and w:rPr/w:i">
+            <xsl:text>&lt;cTypeface:Italic&gt;</xsl:text>
+        </xsl:when>
+        <xsl:when test="w:rPr/w:b and w:rPr/w:i">
+            <xsl:text>&lt;cTypeface:Bold Italic&gt;</xsl:text>
+        </xsl:when>
+    </xsl:choose>
     
-    <!-- Character styles -->
-    <xsl:if test="(w:rPr/w:b) or (w:rPr/w:i) or (w:rPr/w:u)">
-        <xsl:text>&lt;CharStyle:</xsl:text>
-    </xsl:if>
-    
-    <!-- Italic text -->
-    <xsl:if test="w:rPr/w:i">
-        <xsl:text>Italic</xsl:text>
-    </xsl:if>
-    
-    <!-- Bold text -->    
-    <xsl:if test="w:rPr/w:b">
-        <xsl:text>Bold</xsl:text>
-    </xsl:if>
-    
-    <xsl:if test="(w:rPr/w:b) or (w:rPr/w:i) or (w:rPr/w:u)">
-        <xsl:text>&gt;</xsl:text>
-    </xsl:if>
-    
-    <!-- Underlined text -->
+    <!-- Begin Underlined text -->
     <xsl:if test="w:rPr/w:u">
         <xsl:text>&lt;cUnderline:1&gt;</xsl:text>
     </xsl:if>
     
-    <!-- Get the text content -->
-    <xsl:value-of select="."/>
+    <!-- Begin Strikethrough text -->
+    <xsl:if test="w:rPr/w:strike">
+        <xsl:text>&lt;cStrikethru:1&gt;</xsl:text>
+    </xsl:if>
     
+    <!-- Begin sub/superscript -->
+    <xsl:if test="w:rPr/w:vertAlign">
+        <xsl:text>&lt;cPosition:</xsl:text>
+        <xsl:choose>
+            <xsl:when test="w:rPr/w:vertAlign/@w:val = 'superscript'">
+                <xsl:text>Superscript</xsl:text>
+            </xsl:when>
+            <xsl:when test = "w:rPr/w:vertAlign/@w:val = 'subscript'">
+                <xsl:text>Subscript</xsl:text>
+            </xsl:when>
+        </xsl:choose>
+        <xsl:text>&gt;</xsl:text>
+    </xsl:if>
+    
+    <!-- Check if r contains a drawing or not -->
+    <xsl:choose>
+        <xsl:when test="w:drawing">
+            <xsl:apply-templates match="w:drawing"/>
+        </xsl:when>
+        <xsl:otherwise>
+            <!-- If it does not, get text content-->
+            <xsl:value-of select="w:t"/>
+        </xsl:otherwise>
+    </xsl:choose>
+
+    <!-- End sub/superscript -->
+    <xsl:if test="w:rPr/w:vertAlign">
+        <xsl:text>&lt;cPosition:&gt;</xsl:text>
+    </xsl:if>
+    
+    <!-- End strikethrough text -->
+    <xsl:if test="w:rPr/w:strike">
+        <xsl:text>&lt;cStrikethru:&gt;</xsl:text>
+    </xsl:if>
+    
+    <!-- End underlined text -->
     <xsl:if test="w:rPr/w:u">
         <xsl:text>&lt;cUnderline:&gt;</xsl:text>
     </xsl:if>
-    
-    <!-- Escape the formatting, if there was one. -->
+
+    <!-- End bold/italic -->
     <xsl:if test="(w:rPr/w:b) or (w:rPr/w:i)">
-        <xsl:text>&lt;CharStyle:&gt;</xsl:text>
+        <xsl:text>&lt;cTypeface:&gt;</xsl:text>
     </xsl:if>
     
 </xsl:template>

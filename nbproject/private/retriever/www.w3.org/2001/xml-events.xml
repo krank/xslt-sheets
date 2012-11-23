@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>XML Events namespace</title>
+<link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/base.css" />
+</head>
+<body>
+<div class="head">
+<p><a href="http://www.w3.org/"><img class="head"
+src="http://www.w3.org/Icons/w3c_home" alt="W3C" /></a></p>
+</div>
+
+<p>This is an XML namespace defined in the
+<a href="http://www.w3.org/TR/xml-events">XML Events</a> specification.
+The XML Events Recommendation was published on <a
+href="http://www.w3.org/TR/2003/REC-xml-events-20031014">14 October 2003</a>.</p>
+
+<p><strong>Note.</strong>
+This namespace name will not be reused for any other purpose.
+For updated information, please refer to the <a
+href="http://www.w3.org/TR/xml-events">latest version of the XML Events
+specification</a>.</p>
+
+<p>For more information about XML, please refer to <a
+href="http://www.w3.org/TR/REC-xml">The Extensible Markup Language
+(XML) 1.0 specification</a>. For more information about XML
+namespaces, please refer to the <a
+href="http://www.w3.org/TR/REC-xml-names">Namespaces in XML
+specification</a>.</p>
+
+<hr />
+
+<address>
+<a href="mailto:webmaster@w3.org">Webmaster</a>
+</address>
+
+<p>Last modified: $Date: 2003/10/14 12:57:59 $</p>
+</body>
+</html>
+

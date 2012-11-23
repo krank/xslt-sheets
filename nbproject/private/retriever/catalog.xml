@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://purl.org/dc/elements/1.1/" uri="dublincore.org/2012/06/14/dcelements"/>
+    <system systemId="http://www.w3.org/2001/xml-events" uri="www.w3.org/2001/xml-events.xml"/>
+    <system systemId="http://www.w3.org/1999/xlink" uri="www.w3.org/1999/xlink"/>
+    <system systemId="http://www.w3.org/1998/Math/MathML" uri="www.w3.org/1998/math/mathml/index"/>
+</catalog>

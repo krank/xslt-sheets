@@ -136,9 +136,10 @@
     <xsl:apply-templates select="w:r"/>
     
     <!-- Add a CR after the paragraph, unless it's the last one -->
-    <xsl:if test="not(position() = last()-1)">
+    <xsl:if test="not(position() = last())">
         <xsl:text>&#13;</xsl:text>
     </xsl:if>
+    
 </xsl:template>
 
 <!-- Template for sub-r's -->

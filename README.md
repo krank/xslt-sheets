@@ -7,7 +7,7 @@ indtt-transform.xsl (xslt transformer for docx/xml to indesign tagged text)
 
 
 Notes on indtt-transform.xsl:
- - Its primary purpose is conversion of docx-documents downloaded fr�n google docs. This means it will probably not work very well with a lot of "normal" docx documents.
+ - Its primary purpose is conversion of docx-documents downloaded from google docs. This means it will probably not work very well with a lot of "normal" docx documents.
  - Features are implemented one at a time, and there will probably always be some missing.
  - Some features will not be implemented because the purpose of the xslt is to get the document structure, not its layout, into InDesign.
  - The resulting InDesign Tagged Text document will contain a number of paragraph styles. These styles lack formatting.

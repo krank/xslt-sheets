@@ -11,7 +11,7 @@ Notes on indtt-transform.xsl:
  - Features are implemented one at a time, and there will probably always be some missing.
  - Some features will not be implemented because the purpose of the xslt is to get the document structure, not its layout, into InDesign.
  - The resulting InDesign Tagged Text document will contain a number of paragraph styles. These styles lack formatting.
-- No support for nested tables. Gdocs cannot export documents with nested tables to docx, which means support for nested tables is not a priority.
+ - No support for nested tables. Gdocs cannot export documents with nested tables to docx, which means support for nested tables is not a priority.
  
 InDesign Tagged Text is a more limited format than Google Docs or Docx. This means:
  - No image support. Images in the docx are replaced by a small text indicating their position.

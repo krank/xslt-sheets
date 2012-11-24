@@ -206,7 +206,19 @@
         </xsl:when>
         <xsl:otherwise>
             <!-- If it does not, get text content-->
-            <xsl:value-of select="w:t"/>
+            <xsl:for-each select="descendant::*">
+                <xsl:choose>
+                    <xsl:when test="name(.) = 'w:t'">
+                        <xsl:value-of select="."/>
+                    </xsl:when>
+                    <xsl:when test="name(.) = 'w:tab'">
+                        <xsl:text>&#09;</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="name(.) = 'w:br' and @w:type='textWrapping'">
+                        <xsl:text>&#13;</xsl:text>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
         </xsl:otherwise>
     </xsl:choose>
 
@@ -239,10 +251,11 @@
     
     <!-- Page break -->
     <xsl:if test="w:br">
-        <xsl:text>&lt;cNextXChars:Column&gt;</xsl:text>
+            <xsl:if test="not(w:br/@w:type='textWrapping')">
+                <xsl:text>&lt;cNextXChars:Column&gt;</xsl:text>
+            </xsl:if>
     </xsl:if>
             
-    
 </xsl:template>
 
 

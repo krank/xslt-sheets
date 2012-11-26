@@ -1,9 +1,12 @@
+#coding: utf-8
+
 # Imports
 from lxml import etree
 from StringIO import StringIO
 import zipfile
-import os
+import os, sys
 import codecs
+import shutil
 
 # An URL resolver that finds files in a specified zip file
 class ZipFileResolver(etree.Resolver):
@@ -23,6 +26,7 @@ class ZipFileResolver(etree.Resolver):
         return self.resolve_string(contents, context)
 
 
+# A decoder for Docx files
 def decode_docx(docname, xsltname):
     
     ## If file exists
@@ -61,9 +65,69 @@ def decode_docx(docname, xsltname):
     else:
         print "File doesn't exist"
 
-decoded = decode_docx('exempel.docx', 'indtt-transform.xsl')
 
-if decoded:
-    outfile = codecs.open('exempel.txt','w','utf-16')
-    outfile.write(decoded)
-    outfile.close()
+def extract_docx_images(docname, imgpath="." + os.sep):
+    
+    ## Get the zipfile
+    z = zipfile.ZipFile(docname)
+
+    ## Go through all files
+    folderchecked = False
+    
+    for f in z.namelist():
+        ## Extract all files with the right filename
+        if f[11:16] == "image":
+            ## Check if folder exists
+            if not folderchecked:
+                if not (os.path.exists(imgpath) and os.path.isdir(imgpath)):
+                    os.mkdir(imgpath)
+                    print " created folder " + imgpath
+                    folderchecked = True
+            
+            ## Get filename
+            filename = os.path.basename(f)
+            print " Writing image " + filename
+            
+            ## Open source and target
+            source = z.open(f)
+            target = open(imgpath + os.sep + filename, "wb")
+            
+            ## Copy the data
+            shutil.copyfileobj(source, target)
+            
+            ## CLose source and target
+            source.close()
+            target.close()
+            
+            
+    
+
+# A function that transforms docx files to txt files
+def docx_indtt_file(filename, path="." + os.sep):
+    
+    print "Transforming " + filename
+    decoded = decode_docx(filename, 'indtt-transform.xsl')
+    
+    if decoded:
+        txtfilename = path + os.path.splitext(filename)[0] + '.txt'
+        print " Writing to " + txtfilename
+        try:
+            outfile = codecs.open(txtfilename,'w','utf-16')
+            outfile.write(decoded)
+            outfile.close()
+            print " Finished writing " + txtfilename
+            
+        except:
+            print " Error!"
+            
+        imgpath = path + os.path.splitext(sys.argv[1])[0] + "_images"
+        
+        extract_docx_images(sys.argv[1], imgpath)
+    
+# Main
+if len(sys.argv) == 2 and os.path.exists(sys.argv[1]):
+    docx_indtt_file(sys.argv[1])
+else:
+    print "No existing file specified."
+    
+raw_input("Press ENTER to continue")

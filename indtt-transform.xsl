@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
  xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
  xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
-<xsl:output method="text"/>
+<xsl:output method="text" encoding="utf-8"/>
 <xsl:strip-space elements="*"/>
 
 <!-- Files to use -->
@@ -18,15 +18,14 @@
 
 <!-- Basic document structure -->
 <xsl:template match="/">
-    <xsl:text>&lt;UNICODE-WIN&gt;&#13;</xsl:text>
-    
+    <xsl:text>&lt;UNICODE-WIN&gt;&#13;&#10;</xsl:text>
     <!-- Set up paragraph styles -->
-    <xsl:text>&lt;DefineParaStyle:NormalParagraphStyle&gt;&#13;</xsl:text>
+    <xsl:text>&lt;DefineParaStyle:NormalParagraphStyle&gt;&#13;&#10;</xsl:text>
 
     <xsl:for-each select="//w:pStyle[generate-id() = generate-id(key('styles',@w:val)[1])]">
         <xsl:text>&lt;DefineParaStyle:</xsl:text>
         <xsl:value-of select="@w:val"/>
-        <xsl:text>&gt;&#13;</xsl:text>
+        <xsl:text>&gt;&#13;&#10;</xsl:text>
     </xsl:for-each>
     
     <xsl:apply-templates/>
@@ -54,7 +53,7 @@
     </xsl:for-each>
     
     
-    <xsl:text>&lt;TableEnd:&gt;&#13;</xsl:text>
+    <xsl:text>&lt;TableEnd:&gt;&#13;&#10;</xsl:text>
 </xsl:template>
 
 <!-- Match all paragraphs -->
@@ -134,7 +133,7 @@
     
     <!-- Add a CR after the paragraph, unless it's the last one -->
     <xsl:if test="not(position() = last())">
-        <xsl:text>&#13;</xsl:text>
+        <xsl:text>&#13;&#10;</xsl:text>
     </xsl:if>
     
 </xsl:template>
@@ -215,7 +214,7 @@
                         <xsl:text>&#09;</xsl:text>
                     </xsl:when>
                     <xsl:when test="name(.) = 'w:br' and @w:type='textWrapping'">
-                        <xsl:text>&#13;</xsl:text>
+                        <xsl:text>&#13;&#10;</xsl:text>
                     </xsl:when>
                 </xsl:choose>
             </xsl:for-each>
